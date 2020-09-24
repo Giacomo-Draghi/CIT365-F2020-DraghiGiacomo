@@ -11,3 +11,16 @@ C:\Users\jak12\source\repos\ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleAp
 C:\Users\jak12\source\repos\ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.dll
 C:\Users\jak12\source\repos\ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.pdb
 C:\Users\jak12\source\repos\ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.genruntimeconfig.cache
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\bin\Debug\netcoreapp3.1\ConsoleApplication.exe
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\bin\Debug\netcoreapp3.1\ConsoleApplication.deps.json
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\bin\Debug\netcoreapp3.1\ConsoleApplication.runtimeconfig.json
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\bin\Debug\netcoreapp3.1\ConsoleApplication.runtimeconfig.dev.json
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\bin\Debug\netcoreapp3.1\ConsoleApplication.dll
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\bin\Debug\netcoreapp3.1\ConsoleApplication.pdb
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.csprojAssemblyReference.cache
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.AssemblyInfoInputs.cache
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.AssemblyInfo.cs
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.csproj.CoreCompileInputs.cache
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.dll
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.pdb
+D:\CIT365-F2020-DraghiGiacomo\Week1-ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.genruntimeconfig.cache

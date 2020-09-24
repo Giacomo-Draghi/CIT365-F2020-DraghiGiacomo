@@ -6,7 +6,7 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {   
-            Console.WriteLine("\nWhat is your name?");
+            Console.WriteLine("What is your name?");
             //Storing input from console
             var name = Console.ReadLine();
             Console.WriteLine("\nWhat is your Location? (State or Country)");
