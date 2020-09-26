@@ -115,6 +115,8 @@ namespace MathQuiz
                 MessageBox.Show("You got all the answers right!",
                                 "Congratulations!");
                 startButton.Enabled = true;
+                FinishTheQuiz.Enabled = false;
+                timeLabel.BackColor = SystemColors.Control;
             }
             else if (timeLeft > 11)
             {
@@ -132,19 +134,35 @@ namespace MathQuiz
                 timeLabel.BackColor = Color.Red;
             }
             else
-            {
-                // If the user ran out of time, stop the timer, show 
-                // a MessageBox, and fill in the answers.
-                timer1.Stop();
-                timeLabel.Text = "Time's up!";
-                MessageBox.Show("You didn't finish in time.", "Sorry!");
-                sum.Value = addend1 + addend2;
-                difference.Value = minuend - subtrahend;
-                product.Value = multiplicand * multiplier;
-                quotient.Value = dividend / divisor;
-                startButton.Enabled = true;
-                FinishTheQuiz.Enabled = false;
-                timeLabel.BackColor = SystemColors.Control;
+            {//Controllo Carolina. 
+                if ((addend1 + addend2 == sum.Value)
+                && (minuend - subtrahend == difference.Value)
+                && (multiplicand * multiplier == product.Value)
+                && (dividend / divisor == quotient.Value))
+                {
+                    answer = true;
+                    timer1.Stop();
+                    MessageBox.Show("You got all the answers right!",
+                                    "Congratulations!");
+                    startButton.Enabled = true;
+                    FinishTheQuiz.Enabled = false;
+                    timeLabel.BackColor = SystemColors.Control;
+                }
+                else
+                {
+                    // If the user ran out of time, stop the timer, show 
+                    // a MessageBox, and fill in the answers.
+                    timer1.Stop();
+                    timeLabel.Text = "Time's up!";
+                    MessageBox.Show("You didn't finish in time.", "Sorry!");
+                    sum.Value = addend1 + addend2;
+                    difference.Value = minuend - subtrahend;
+                    product.Value = multiplicand * multiplier;
+                    quotient.Value = dividend / divisor;
+                    startButton.Enabled = true;
+                    FinishTheQuiz.Enabled = false;
+                    timeLabel.BackColor = SystemColors.Control;
+                }
             }
         }
         

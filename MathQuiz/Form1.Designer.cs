@@ -321,7 +321,7 @@
             this.FinishTheQuiz.Location = new System.Drawing.Point(254, 315);
             this.FinishTheQuiz.Name = "FinishTheQuiz";
             this.FinishTheQuiz.Size = new System.Drawing.Size(152, 34);
-            this.FinishTheQuiz.TabIndex = 26;
+            this.FinishTheQuiz.TabIndex = 6;
             this.FinishTheQuiz.Text = "Check Answers";
             this.FinishTheQuiz.UseVisualStyleBackColor = true;
             this.FinishTheQuiz.Click += new System.EventHandler(this.FinishTheQuiz_Click);
