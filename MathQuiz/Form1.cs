@@ -45,6 +45,9 @@ namespace MathQuiz
         // remaining time.
         int timeLeft;
 
+        //This variable set the tick event to false till the FinishTheQuiz buttomn is clicked. 
+        bool answer = false;
+
         public void StartTheQuiz()
         {
             // Fill in the addition problem.
@@ -92,28 +95,18 @@ namespace MathQuiz
             timer1.Start();
         }
 
-        private bool CheckTheAnswer()
-        {
-            if ((addend1 + addend2 == sum.Value)
-                && (minuend - subtrahend == difference.Value)
-                && (multiplicand * multiplier == product.Value)
-                && (dividend / divisor == quotient.Value))
-                return true;
-            else
-                return false;
-        }
-
         private void startButton_Click(object sender, EventArgs e)
         {
             StartTheQuiz();
             Date();
             startButton.Enabled = false;
+            FinishTheQuiz.Enabled = true;
         }
 
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (CheckTheAnswer())
+            if (answer)
             {
                 // If CheckTheAnswer() returns true, then the user 
                 // got the answer right. Stop the timer  
@@ -150,6 +143,7 @@ namespace MathQuiz
                 product.Value = multiplicand * multiplier;
                 quotient.Value = dividend / divisor;
                 startButton.Enabled = true;
+                FinishTheQuiz.Enabled = false;
                 timeLabel.BackColor = SystemColors.Control;
             }
         }
@@ -168,7 +162,19 @@ namespace MathQuiz
 
         private void Date()
         {
+            var date = DateTime.Now.ToString("dd MMMM yyyy");
+            currentDate.Text = date;
+        }
 
+        private void FinishTheQuiz_Click(object sender, EventArgs e)
+        {
+            if ((addend1 + addend2 == sum.Value)
+                && (minuend - subtrahend == difference.Value)
+                && (multiplicand * multiplier == product.Value)
+                && (dividend / divisor == quotient.Value))
+            {
+                answer = true;
+            }
         }
     }
 }
