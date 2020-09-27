@@ -19,7 +19,8 @@ namespace MegaDesk_Draghi
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
-
+            //Closes the main Form
+            Close();
         }
 
         private void AddQuoteButton_Click(object sender, EventArgs e)

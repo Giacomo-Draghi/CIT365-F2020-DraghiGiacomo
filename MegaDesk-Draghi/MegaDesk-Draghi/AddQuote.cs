@@ -16,5 +16,10 @@ namespace MegaDesk_Draghi
         {
             InitializeComponent();
         }
+
+        private void SubmitOrder_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
