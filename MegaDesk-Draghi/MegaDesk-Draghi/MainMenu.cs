@@ -25,8 +25,12 @@ namespace MegaDesk_Draghi
 
         private void AddQuoteButton_Click(object sender, EventArgs e)
         {
-
+            AddQuote viewAddQuote = new AddQuote();
+            viewAddQuote.Tag = this;
+            viewAddQuote.Show(this);
+            this.Hide();
         }
+
 
         private void ViewQuotesButton_Click(object sender, EventArgs e)
         {

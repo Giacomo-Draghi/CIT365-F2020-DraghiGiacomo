@@ -19,7 +19,10 @@ namespace MegaDesk_Draghi
 
         private void SubmitOrder_Click(object sender, EventArgs e)
         {
-            
+            MainMenu viewMainMenu = (MainMenu)Tag;
+            viewMainMenu.Show();
+            this.Close();
         }
+
     }
 }
