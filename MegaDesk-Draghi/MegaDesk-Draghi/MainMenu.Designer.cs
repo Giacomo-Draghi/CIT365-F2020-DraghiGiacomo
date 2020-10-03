@@ -94,7 +94,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainMenu";
-            this.Text = "Form1";
+            this.Text = "Main Menu";
             this.ResumeLayout(false);
 
         }
