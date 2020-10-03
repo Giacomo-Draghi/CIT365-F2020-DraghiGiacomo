@@ -117,4 +117,19 @@ namespace MegaDesk_Draghi
             viewMainMenu.Show();
             this.Close();
         }
+
+        // Boolean flag used to determine when a character other than a number is entered.
+        private bool nonNumberEntered = false;
+        private void AddDepth_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                nonNumberEntered = false;
+            } else if (Char.IsControl(e.KeyChar))
+            {
+                nonNumberEntered = true;
+                // Stop the character from being entered into the control since it is non-numerical.
+                e.Handled = true;
+            }
+        }
     } }

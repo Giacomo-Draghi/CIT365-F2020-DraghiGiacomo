@@ -132,7 +132,7 @@ namespace MegaDesk_Draghi
 
         public string Name (string n)
         {
-            n = name;
+            name = n;
             return n;
         }
 
