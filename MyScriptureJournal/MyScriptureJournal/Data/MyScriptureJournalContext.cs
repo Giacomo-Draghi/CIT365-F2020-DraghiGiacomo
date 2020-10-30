@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace MyScriptureJournal.Models
+namespace MyScriptureJournal.Data
 {
     public class MyScriptureJournalContext : DbContext
     {

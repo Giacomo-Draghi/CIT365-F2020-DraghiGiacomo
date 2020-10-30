@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "MyScriptureJurnal_1Context"
+    }
+  }
+}

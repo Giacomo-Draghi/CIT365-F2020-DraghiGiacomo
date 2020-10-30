@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using MyScriptureJournal.Models;
-using MyScriptureJournal.Data;
+using MyScriptureJurnal_1.Data;
+using MyScriptureJurnal_1.Models;
 
-namespace MyScriptureJournal.Pages.Scripture
+namespace MyScriptureJurnal_1.Pages.Scriptures
 {
     public class CreateModel : PageModel
     {
-        private readonly MyScriptureJournal.Data.MyScriptureJournalContext _context;
+        private readonly MyScriptureJurnal_1.Data.MyScriptureJurnal_1Context _context;
 
-        public CreateModel(MyScriptureJournal.Data.MyScriptureJournalContext context)
+        public CreateModel(MyScriptureJurnal_1.Data.MyScriptureJurnal_1Context context)
         {
             _context = context;
         }
