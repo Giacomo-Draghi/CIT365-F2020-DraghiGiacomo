@@ -19,9 +19,14 @@ namespace MvcMovie.Controllers
             _context = context;
         }
 
+        [BindProperty(SupportsGet = true)]
+        public string MovieGenre { get; set; }
+
         // GET: Movies
         public async Task<IActionResult> Index(string movieGenre, string searchString)
         {
+            
+
             // Use LINQ to get list of genres.
             IQueryable<string> genreQuery = from m in _context.Movie
                                             orderby m.Genre
