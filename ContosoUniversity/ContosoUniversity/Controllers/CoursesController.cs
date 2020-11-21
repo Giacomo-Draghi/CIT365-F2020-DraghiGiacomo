@@ -249,13 +249,13 @@ namespace ContosoUniversity.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateCourseCredits(int? multiplier)
         {
-            if (multiplier != null)
-            {
-                ViewData["RowsAffected"] =
-                    await _context.Database.ExecuteSqlCommandAsync(
-                        "UPDATE Course SET Credits = Credits * {0}",
-                        parameters: multiplier);
-            }
+            //if (multiplier != null)
+            //{
+            //    ViewData["RowsAffected"] =
+            //        await _context.Database.ExecuteSqlCommandAsync(
+            //            "UPDATE Course SET Credits = Credits * {0}",
+            //            parameters: multiplier);
+            //}
             return View();
         }
     }
